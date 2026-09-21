@@ -1,11 +1,13 @@
 {
+    "name": "Chat para heroes",
   "short_name": "PWA Chat",
-  "name": "Chat para heroes",
+  "description": "Aplicación de chat progresiva para héroes digitales",
   "start_url": "index.html",
   "background_color": "#3498db",
   "theme_color": "#3498db",
   "display": "standalone",
   "orientation": "portrait",
+  "scope": "/",
   "icons": [
     {
       "src": "img/icons/icon-192x192.png",
