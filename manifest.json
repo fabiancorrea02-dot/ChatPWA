@@ -1,13 +1,11 @@
 {
-    "name": "Chat para heroes",
+  "name": "Chat para heroes",
   "short_name": "PWA Chat",
   "description": "Aplicación de chat progresiva para héroes digitales",
-  "start_url": "index.html",
-  "background_color": "#3498db",
-  "theme_color": "#3498db",
-  "display": "standalone",
-  "orientation": "portrait",
-  "scope": "/",
+  "version": "1.0.0",
+  "author": "Fabian Correa",
+  "lang": "es-CO",
+  "dir": "ltr",
   "icons": [
     {
       "src": "img/icons/icon-192x192.png",
@@ -22,6 +20,41 @@
       "purpose": "maskable"
     }
   ],
+  "share_target": {
+    "action": "/share",
+    "method": "GET",
+    "enctype": "application/x-www-form-urlencoded",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  },
+  "protocol_handlers": [
+    {
+      "protocol": "web+chatheroes",
+      "url": "/handle-chat?%s"
+    }
+  ],
+  "handle_links": "preferred",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui", "browser"],
+  "orientation": "portrait",
+  "start_url": "index.html",
+  "scope": "./",
+  "theme_color": "#3498db",
+  "background_color": "#3498db",
+  "launch_handler": {
+    "client_mode": ["navigate-existing", "auto"]
+  },
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "developer": {
+    "name": "Fabian Correa",
+    "url": "https://github.com/fabiancorrea02-dot"
+  },
+  "categories": ["social", "entertainment", "communication"],
   "screenshots": [
     {
       "src": "img/screenshot-mobile.png",
@@ -37,5 +70,31 @@
       "form_factor": "wide",
       "label": "Vista escritorio de Chat para héroes"
     }
-  ]
+  ],
+  "shortcuts": [
+    {
+      "name": "Nuevo mensaje",
+      "short_name": "Nuevo",
+      "url": "/nuevo",
+      "icons": [
+        {
+          "src": "/img/icons/icon-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.example.chatheroes",
+      "id": "com.example.chatheroes"
+    }
+  ],
+  "prefer_related_applications": false,
+  "color_scheme": "light",
+  "ms_tile_color": "#3498db",
+  "apple_mobile_web_app_capable": true,
+  "apple_mobile_web_app_status_bar_style": "black-translucent",
+  "apple_mobile_web_app_title": "PWA Chat"
 }
