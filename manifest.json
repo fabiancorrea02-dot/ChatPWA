@@ -21,7 +21,7 @@
     }
   ],
   "share_target": {
-    "action": "/share",
+    "action": "index.html",
     "method": "GET",
     "enctype": "application/x-www-form-urlencoded",
     "params": {
@@ -33,7 +33,7 @@
   "protocol_handlers": [
     {
       "protocol": "web+chatheroes",
-      "url": "/handle-chat?%s"
+      "url": "index.html?protocol=%s"
     }
   ],
   "handle_links": "preferred",
