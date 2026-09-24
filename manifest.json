@@ -55,6 +55,22 @@
     "url": "https://github.com/fabiancorrea02-dot"
   },
   "categories": ["social", "entertainment", "communication"],
+  "screenshots": [
+    {
+      "src": "img/screenshot-mobile.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Vista móvil de Chat para héroes"
+    },
+    {
+      "src": "img/screenshot-desktop.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Vista escritorio de Chat para héroes"
+    }
+  ],
   "shortcuts": [
     {
       "name": "Nuevo mensaje",
